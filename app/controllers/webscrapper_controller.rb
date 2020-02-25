@@ -1,4 +1,4 @@
-require 'HTTParty'
+require 'httparty'
 require 'Nokogiri'
 require 'json'  
 require 'active_support/core_ext'
