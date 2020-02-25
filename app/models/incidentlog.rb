@@ -1,0 +1,3 @@
+class Incidentlog < ApplicationRecord
+
+end
