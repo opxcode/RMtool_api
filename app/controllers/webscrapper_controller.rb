@@ -1,5 +1,5 @@
 require 'httparty'
-require 'Nokogiri'
+require 'nokogiri'
 require 'json'  
 require 'active_support/core_ext'
  
