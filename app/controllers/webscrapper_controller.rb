@@ -9,7 +9,7 @@ class WebscrapperController < ApplicationController
      url ='https://www.mas.gov.sg/regulation'
      response = HTTParty.get(url)
      #render html: response
-     data = Nokogiri::HTML(response.gsub("\u0011", '')).css('[id="_focus-areas"]');
+     data = Nokogiri::HTML(response).css('[id="_focus-areas"]');
      headers = data.css('h1');
      nodeset = data.css('a');          # Get all anchors via css
     href = nodeset.map {|element| element["href"]}.compact;  
